@@ -1,17 +1,17 @@
 # Desafio: Implementar o método 'count_kittens' da classe 'CatUtils',
 # que deve contar o número de gatinhos em uma lista de gatos.
-# Quando finalizar o desenvolvimento do método, adicione mais cenários de testes 
+# Quando finalizar o desenvolvimento do método, adicione mais cenários de testes
 
 # Implemente a solução no método 'count_kittens' abaixo:
 
 class CatUtils
   def self.count_kittens(cats)
-    # Sua implementação aqui
+    cats.count { |cat| cat[:age] < 1 }
   end
 end
-  
+
   # Testes
-  
+
 RSpec.describe CatUtils do
   describe '.count_kittens' do
     context 'quando a lista de gatos contém apenas gatinhos' do
