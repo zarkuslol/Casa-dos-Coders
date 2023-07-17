@@ -5,7 +5,7 @@
 
 class StringUtils
   def self.is_palindrome?(string)
-    # Sua implementação aqui
+    string === string.reverse
   end
 end
 
