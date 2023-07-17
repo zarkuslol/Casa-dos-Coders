@@ -17,7 +17,11 @@ class Product
   end
 
   def calculate_discounted_price
-    # Sua implementação aqui
+    if @discount_percentage == 0
+      @base_price
+    end
+
+    @base_price - (@base_price * @discount_percentage / 100)
   end
 end
 
