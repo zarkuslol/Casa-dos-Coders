@@ -10,7 +10,7 @@
 
 class Park
   def can_access_ride(height, age, height_restriction, age_restriction)
-   #Adicione seu codigo aqui
+    (height >= height_restriction && age >= age_restriction)
   end
 end
 
