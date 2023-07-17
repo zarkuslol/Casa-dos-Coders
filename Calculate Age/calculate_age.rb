@@ -10,7 +10,8 @@ require 'date'
 
 class Person
   def calculate_age(birthdate)
-    #Adicione seu código aqui
+    difference_between_dates = (Date.today - birthdate).to_i / 365
+    difference_between_dates
   end
 end
 
